@@ -23,7 +23,7 @@ Aplicação web desenvolvida utilizando React para gerenciar tarefas do dia a di
 
 Clone o repositório:
 
-git clone https://github.com/Lukez22/gerenciador-de-tarefas.git
+git clone https://github.com/Lukez22/gerenciador-de-tarefas-react.git
 
 Instale as dependências:
 
