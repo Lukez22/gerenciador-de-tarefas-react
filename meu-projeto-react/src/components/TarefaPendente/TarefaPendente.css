@@ -1,0 +1,44 @@
+.tarefa-pendente {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.tarefa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.tarefa p {
+  margin: 0;
+  font-size: 1.2rem;
+  word-break: break-word;
+}
+
+.acoes-tarefa {
+  padding-left: 5px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn.concluido {
+  color: #fff;
+  background-color: #28a745;
+  border-radius: 50%;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}

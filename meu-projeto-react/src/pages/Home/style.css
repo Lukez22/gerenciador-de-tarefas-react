@@ -1,0 +1,253 @@
+:root {
+  --bg: #fff;
+  --text: #000;
+  --bg-gr: #fff;
+  --bg-ct: linear-gradient(180deg, #ffffff 0%, rgba(1, 152, 182, 0.8) 100%);
+  --bg-menu: #00bbff;
+  --bg-bt-hvr: #0099cc;
+  --brd-tp: #ccc;
+}
+
+.escuro {
+  --bg: #555;
+  --text: #fff;
+  --bg-gr: #f7f7f7;
+  --bg-ct: linear-gradient(180deg, #000000 0%, rgba(42, 41, 41, 0.8) 100%);
+  --bg-menu: #333;
+  --bg-bt-hvr: #1e1f1f;
+}
+
+* {
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-ct);
+}
+
+.container-gerenciador {
+  margin: 30px;
+  width: 95%;
+  max-width: 900px;
+  background-color: var(--bg-gr);
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+  background-color: var(--bg-menu);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+}
+
+.botao-tema {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.botao-tema svg {
+  height: 60px;
+  width: 60px;
+}
+
+.botao-tema:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+.container-add-tarefas {
+  padding: 20px;
+}
+
+.adicionar-tarefa {
+  display: flex;
+  gap: 15px;
+}
+
+.adicionar-tarefa input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.adicionar-tarefa button {
+  padding: 1px 15px;
+  background-color: var(--bg-menu);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.adicionar-tarefa button:hover {
+  background-color: var(--bg-bt-hvr);
+  transition: all 0.3s ease;
+}
+
+.tarefas {
+  border-top: solid 1px var(--brd-tp);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.tarefas h2 {
+  margin-bottom: 8px;
+}
+
+.linha {
+  border-top: 1px solid var(--brd-tp);
+  margin: 10px 0;
+}
+
+.tarefas li {
+  padding: 5px;
+}
+
+.tarefas-concluidas,
+.tarefas-pendentes {
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+.sem-tarefas {
+  color: #888;
+  font-style: italic;
+  cursor: default;
+}
+
+.tarefas ul {
+  list-style: none;
+}
+
+.contador-tarefas {
+  padding: 10px;
+  border-top: solid 1px var(--brd-tp);
+}
+
+.container-contador {
+  display: flex;
+  gap: 280px;
+  max-width: 900px;
+  margin-left: 23px;
+}
+
+.progresso {
+  border-top: solid 1px var(--brd-tp);
+  border-radius: 0 0 20px 20px;
+}
+
+.container-progresso {
+  padding: 20px;
+  width: 30%;
+}
+
+.barra-progresso {
+  height: 12px;
+  background-color: #c3c3c3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progresso-concluido {
+  height: 100%;
+  background-color: #00bbff;
+  border-radius: 10px;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 550px) {
+  .menu h1 {
+    font-size: 1.4rem;
+  }
+
+  .botao-tema svg {
+    height: 45px;
+    width: 45px;
+  }
+
+  .tarefas {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .tarefas h2 {
+    font-size: 1.2rem;
+  }
+
+  .sem-tarefas {
+    font-size: 0.9rem;
+  }
+
+  .container-contador {
+    gap: 150px;
+    margin-left: 10px;
+  }
+
+  .container-contador p {
+    font-size: 0.8rem;
+  }
+
+  .container-progresso {
+    font-size: 0.9rem;
+    width: 55%;
+  }
+}
+
+@media (max-width: 380px) {
+  .menu h1 {
+    font-size: 1.2rem;
+  }
+
+  .botao-tema svg {
+    height: 35px;
+    width: 35px;
+  }
+
+  .tarefas h2 {
+    font-size: 1rem;
+  }
+
+  .texto-btn-add {
+    display: none;
+  }
+
+  .sem-tarefas {
+    font-size: 0.8rem;
+  }
+
+  .container-contador {
+    gap: 150px;
+    margin-left: 5px;
+  }
+
+  .container-contador p {
+    font-size: 0.7rem;
+  }
+
+  .container-progresso {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+}

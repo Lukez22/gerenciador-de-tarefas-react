@@ -1,0 +1,47 @@
+.tarefa-concluida{
+  background-color: #e0ffe0;
+  border: 1px solid #00cc00;
+  border-radius: 8px;
+  display: flex;
+  padding: 11px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tarefa-concluida p{
+  margin: 0;
+  font-size: 1.2rem;
+  word-break: break-word;
+}
+
+.nome-tarefa{
+  display: flex;
+  align-items: center;
+}
+
+.icone-check {
+  margin-right: 10px;
+  animation: flutuar 2s ease-in-out infinite;
+}
+
+.remover-tarefa {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #cc0000;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
