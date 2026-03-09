@@ -1,6 +1,6 @@
 # Gerenciador de Tarefas
 
-Aplicação web desenvolvida utilizando React para gerenciar tarefas do dia a dia.
+Gerenciador de Tarefas desenvolvido utilizando React para gerenciar tarefas do dia a dia.
 
 ## Funcionalidades
 
