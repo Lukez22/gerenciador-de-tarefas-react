@@ -25,7 +25,7 @@ Clone o repositório:
 
 git clone https://github.com/Lukez22/gerenciador-de-tarefas-react.git
 
-Entre na pasta do projeto
+Entre na pasta do projeto:
 
 cd meu-projeto-react
 
